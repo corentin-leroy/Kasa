@@ -1,0 +1,20 @@
+@use '../../styles/variables' as v;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 209px;
+  background-color: v.$black;
+
+  &__logo {
+    height: 39px;
+  }
+
+  &__text {
+    color: v.$white;
+    font-size: 24px;
+  }
+}
