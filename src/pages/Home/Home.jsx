@@ -1,7 +1,10 @@
+import Banner from '../../components/Banner/Banner'
+import banniere from '../../assets/Background.png'
+
 function Home() {
   return (
-    <main>
-      <h1>Page d'accueil</h1>
+    <main className="container">
+      <Banner image={banniere} title="Chez vous, partout et ailleurs" />
     </main>
   )
 }
