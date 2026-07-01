@@ -1,0 +1,13 @@
+@use '../../styles/variables' as v;
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 50px;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    }
