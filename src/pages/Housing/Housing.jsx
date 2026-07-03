@@ -1,14 +1,17 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import logements from '../../data/logements.json'
 import etoilePleine from '../../assets/etoile-pleine.svg'
 import etoileVide from '../../assets/etoile-vide.svg'
-import './Housing.scss'
 import Collapse from '../../components/Collapse/Collapse'
+import './Housing.scss'
 
 function Housing() {
   const { id } = useParams()
   const logement = logements.find((item) => item.id === id)
+  if (!logement) {
+    return <Navigate to="/404" replace />
+  }
 
   return (
     <main className="container housing">
