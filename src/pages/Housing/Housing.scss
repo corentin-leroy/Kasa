@@ -1,0 +1,94 @@
+@use '../../styles/variables' as v;
+
+
+.housing {
+  padding-top: 50px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  &__title {
+    color: v.$primary-color;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  &__location {
+    color: v.$black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  &__host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__host-name {
+    color: v.$primary-color;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  &__host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  &__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 115px;
+    height: 25px;
+    padding: 0 15px;
+    background-color: v.$primary-color;
+    color: v.$white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__rating {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__star {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__collapses {
+    display: flex;
+    gap: 76px;
+    margin-top: 25px;
+  }
+
+  &__collapses > * {
+    flex: 1;
+  }
+}
