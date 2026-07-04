@@ -10,6 +10,11 @@
     font-size: 288px;
     font-weight: 700;
     margin-top: 140px;
+
+    @media (max-width: #{v.$breakpoint-mobile}) {
+      font-size: 96px;
+      margin-top: 113px;
+    }
   }
 
   &__message {
@@ -17,6 +22,12 @@
     font-size: 36px;
     font-weight: 500;
     margin-top: 140px;
+    text-align: center;
+
+    @media (max-width: #{v.$breakpoint-mobile}) {
+      font-size: 18px;
+      margin-top: 113px;
+    }
   }
 
   &__link {
@@ -26,5 +37,11 @@
     text-decoration: underline solid;
     margin-top: 140px;
     margin-bottom: 140px;
+
+    @media (max-width: #{v.$breakpoint-mobile}) {
+      font-size: 14px;
+      margin-top: 113px;
+      margin-bottom: 113px;
+    }
   }
 }

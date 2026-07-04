@@ -3,11 +3,17 @@
 .card {
   position: relative;
   display: block;
-  width: 340px;
-  height: 340px;
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+
+  @media (max-width: #{v.$breakpoint-mobile}) {
+    aspect-ratio: auto;
+    height: 255px;
+    ;
+  }
 
   &__image {
     width: 100%;

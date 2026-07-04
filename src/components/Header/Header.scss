@@ -1,27 +1,40 @@
 @use '../../styles/variables' as v;
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+
+  &__logo {
+    height: 68px;
+
+    @media (max-width: #{v.$breakpoint-mobile}) {
+      height: 47px;
+    }
+  }
+
+  &__nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 45px;
-
-    &__logo {
-        height: 68px;
+    gap: 56px;
+    @media (max-width: #{v.$breakpoint-mobile}) {
+        gap: 26px;
     }
 
-    &__nav {
-        display: flex;
-        gap: 30px;
+    a {
+      color: v.$black;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 500;
 
-        a {
-            color: v.$black;
-            text-decoration: none;
-            font-size: 24px;
+      @media (max-width: #{v.$breakpoint-mobile}) {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
 
-            &.active {
-                text-decoration: underline;
-            }
-        }
+      &.active {
+        text-decoration: underline;
+      }
     }
+  }
 }
