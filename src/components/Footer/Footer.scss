@@ -10,6 +10,10 @@
   background-color: v.$black;
   margin-top: 50px;
 
+  @media (max-width: #{v.$breakpoint-mobile}) {
+    margin-top: 25px;
+  }
+
   &__logo {
     height: 39px;
   }
