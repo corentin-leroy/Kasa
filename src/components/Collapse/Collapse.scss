@@ -44,11 +44,22 @@
   }
 
   &__content {
-    padding: 20px 30px;
+    max-height: 0;
+    overflow: hidden;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
+    transition: max-height 0.3s ease;
+
+    &--open {
+      max-height: 500px;
+    }
+  }
+
+  &__content-inner {
+    padding: 20px 30px;
+
     @media (max-width: #{v.$breakpoint-mobile}) {
-        padding: 10px 15px;
+      padding: 10px 15px;
     }
   }
 }
