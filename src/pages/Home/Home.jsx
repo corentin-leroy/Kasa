@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner'
 import Card from '../../components/Card/Card'
-import banniere from '../../assets/background.png'
+import banniere from '../../assets/background.webp'
 import logements from '../../data/logements.json'
 import './Home.scss'
 

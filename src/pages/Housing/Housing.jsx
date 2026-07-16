@@ -22,8 +22,8 @@ function Housing() {
           <h1 className="housing__title">{logement.title}</h1>
           <p className="housing__location">{logement.location}</p>
           <div className="housing__tags">
-            {logement.tags.map((tag, index) => (
-              <span key={index} className="housing__tag">{tag}</span>
+            {logement.tags.map((tag) => (
+              <span key={tag} className="housing__tag">{tag}</span>
             ))}
           </div>
         </div>
@@ -56,8 +56,8 @@ function Housing() {
         </Collapse>
         <Collapse title="Équipements">
           <ul>
-            {logement.equipments.map((equipement, index) => (
-              <li key={index}>{equipement}</li>
+            {logement.equipments.map((equipement) => (
+              <li key={equipement}>{equipement}</li>
             ))}
           </ul>
         </Collapse>

@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
-import banniere from '../../assets/banniere-about.png'
+import banniere from '../../assets/banniere-about.webp'
 import './About.scss'
 
 function About() {
