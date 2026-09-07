@@ -72,7 +72,7 @@ src/
 ├── components/     Composants réutilisables (Header, Footer, Card, Banner, Collapse, Slideshow, Router)
 ├── pages/          Pages liées aux routes (Home, About, Housing, Error)
 ├── data/           Données des logements (JSON)
-├── styles/         Styles globaux, variables et mixins Sass
+├── styles/         Styles globaux
 ├── App.jsx         Composant racine
 └── main.jsx        Point d'entrée de l'application
 ```
